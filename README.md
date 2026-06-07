@@ -1,9 +1,9 @@
 # 🗂️ Online Complaint Registration & Management System
 
-A full-stack **MERN** web application that simplifies complaint handling and improves transparency between users, agents, and administrators. Users can register complaints, track progress in real time, and communicate with assigned agents — while admins get full oversight and analytics.
+A full-stack **MERN** web application that simplifies complaint handling and improves transparency between users, agents, and administrators. Users can register complaints, track progress in real time, and communicate with assigned agents, while admins get full oversight and analytics.
 
-**🔗 Live Demo:** [Add your demo link here]  
-**💻 GitHub:** [Add your repo link here]
+**🔗 Live Demo:**  
+**💻 GitHub:** https://github.com/Kisan062/ONLINE-COMPLAINT-REGISTRATION
 
 ---
 
