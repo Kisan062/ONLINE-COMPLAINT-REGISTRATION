@@ -36,6 +36,7 @@ A full-stack **MERN** web application that simplifies complaint handling and imp
 
 ## 📁 Project Structure
 
+```
 ├── backend/
 │   ├── server.js            # App entry point
 │   ├── config/db.js         # MongoDB connection
@@ -47,6 +48,7 @@ A full-stack **MERN** web application that simplifies complaint handling and imp
         ├── pages/           # Home, Login, Dashboard, Complaint, Feedback
         ├── components/
         └── context/         # Auth & Complaint global state
+```
 
 ---
 
