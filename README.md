@@ -9,11 +9,11 @@ A full-stack **MERN** web application that simplifies complaint handling and imp
 
 ## 🚀 Features
 
-- **JWT Authentication** with role-based access — User, Agent, Admin
+- **JWT Authentication** with role-based access - User, Agent, Admin
 - **Complaint Submission & Tracking** with real-time status updates
 - **Agent Assignment** by Admin with workload management
 - **User ↔ Agent Messaging** on each complaint thread
-- **Admin Analytics Dashboard** — system stats and performance insights
+- **Admin Analytics Dashboard** - system stats and performance insights
 - **Feedback Collection** after complaint resolution
 - **Email Notifications** for key events via Nodemailer
 - Fully **responsive UI** with alert notifications
