@@ -30,7 +30,7 @@ A full-stack **MERN** web application that simplifies complaint handling and imp
 | Auth | JWT, bcrypt.js |
 | Security | Helmet, CORS, express-validator |
 | Email | Nodemailer |
-| Deploy | Render (`render.yaml` included) |
+
 
 ---
 
