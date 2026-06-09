@@ -55,7 +55,65 @@ This architecture enables:
 
 ---
 
-## 📁 Project Structure
+## � Database Schema
+
+### Entity Relationships
+
+The system consists of the following key entities:
+
+**1. User Schema**
+- `user_id` (ObjectId) - Primary identifier
+- `name` (String) - User's full name
+- `email` (String, unique) - User's email address
+- `password` (String) - Hashed password
+- `ph_no` (String) - Phone number
+- `user_type` (String, enum) - Role: "user", "agent", or "admin"
+
+**2. Complaint Schema**
+- `complaint_id` (ObjectId) - Primary identifier
+- `user_id` (ObjectId) - Reference to User who filed the complaint
+- `name` (String) - Complaint title/subject
+- `address` (String) - Location address
+- `city` (String) - City name
+- `state` (String) - State name
+- `pincode` (String) - Postal code
+- `comment` (String) - Detailed complaint description
+- `status` (String, enum) - "open", "in-progress", "resolved", "closed"
+
+**3. Agent Schema**
+- `agent` (String) - Agent identifier
+- `user_id` (ObjectId) - Reference to User (agent role)
+- `complaint_id` (ObjectId) - Reference to assigned Complaint
+- `status` (String) - Assignment status
+- `_id` (ObjectId) - Primary identifier
+
+**4. Message Schema**
+- `_id` (ObjectId) - Primary identifier
+- `complaint_id` (ObjectId) - Reference to Complaint
+- `name` (String) - Sender's name
+- `message` (String) - Message content
+
+**5. Feedback Schema**
+- Links to Complaint after resolution
+- Captures user satisfaction and comments
+
+### Relationships
+
+```
+User (1) ──────────→ (Many) Complaint
+  ↓
+User (1) ──────────→ (Many) Agent Assignment
+  ↓
+Agent ──────────→ Complaint (Many-to-Many through assignment)
+  ↓
+Complaint (1) ──────────→ (Many) Message
+  ↓
+Complaint (1) ──────────→ (1) Feedback
+```
+
+---
+
+## �📁 Project Structure
 
 ```
 ├── backend/
@@ -79,7 +137,7 @@ This architecture enables:
 
 ```bash
 # 1. Clone the repo
-git clone <your-repo-url>
+git clone https://github.com/Kisan062/ONLINE-COMPLAINT-REGISTRATION
 
 # 2. Backend setup
 cd backend
