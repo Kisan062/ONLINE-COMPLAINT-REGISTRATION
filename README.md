@@ -34,6 +34,27 @@ A full-stack **MERN** web application that simplifies complaint handling and imp
 
 ---
 
+## 🏗️ Architecture
+
+The technical architecture of our **online complaint registration and management system** follows a **client-server model**:
+
+- **Frontend**: React-based single-page application with Material UI & Bootstrap for a responsive, real-time user interface. Axios handles seamless REST API integration with the backend.
+- **Backend**: Express.js server manages business logic, request routing, authentication, and communication with the database.
+- **Database**: MongoDB provides efficient, scalable storage for user profiles, complaint records, agent assignments, messages, and feedback data, ensuring reliable and quick access to information.
+
+**Data Flow:**
+```
+User (Frontend) --[Axios REST API]--> Express.js Server --[Mongoose]--> MongoDB
+```
+
+This architecture enables:
+- Role-based access control (User, Agent, Admin)
+- Real-time complaint tracking and status updates
+- Seamless user-agent communication
+- Admin analytics and oversight
+
+---
+
 ## 📁 Project Structure
 
 ```
